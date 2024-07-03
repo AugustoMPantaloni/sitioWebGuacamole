@@ -1,0 +1,535 @@
+
+/* las notas a continuacion son para mi organizacion y recordar las cosas, no darle mucha atencion,
+pero espero que a quien revise esto tambien le sirva para una mejor correccion, muchas gracias */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+/*ver de cambiar todos los fondos y colores en general, todavia no me decido*/
+
+/* css del header del index*/
+.headerIndex{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.contenedorVideoIndex{
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.contenedorLogoIndex{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18.75rem;
+}
+.contenedorMenuIndex{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    padding-left: 5.625rem;
+    padding-top: 15.625rem;
+}
+.menuIndex li{
+    list-style: none;
+    display: inline;
+    margin-right: 6.25rem
+}
+.menuIndex li a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: .625rem 1.25rem;
+    background-color: #dccbb6;
+    border: .0625rem solid #252525;
+    border-radius: .5rem;
+    color: #383838;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* css del header del index*/
+
+/* css del main del index*/
+.mainIndex{
+    height:65rem;
+    width: 100%;
+    background-image: url(../img/fondos/fondoMedio.png);
+    overflow: hidden;
+}
+.tituloMainIndex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 6.25rem;
+    color: #96211f ;
+    font-size: 1.5625rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.contenedorFotoTexto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 6.25rem;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+}
+.contenedorPIndex{
+    height: 35rem;
+    width: 35rem;
+    border-radius: .625rem;
+    background-image: url(../img/fondos/fondoOscuro.png);
+    padding-top: 2.5rem;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    overflow: hidden;
+}
+.pIndex{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.875rem; 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5625rem;
+}
+.estiloImagen{
+    border-radius: .625rem;
+}
+/* css del main del index*/
+
+/* css del main de Reservas*/
+.mainReservas{
+    width: 100%;
+    height: 45rem;
+    background-image: url(../img/fondos/fondoMedio.png);
+}
+.contenedorTituloReservas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.formularioReservas{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    font-size: 1.875rem; 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 1.5625rem;
+}
+
+.formularioReservas div {
+    margin: 1.25rem;
+}
+
+.botonReservar{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+}
+.reservar{
+    padding: .3125rem 1.5625rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.25rem;
+    background-color: #96211f;
+    color: white;
+    border-radius: .3125rem;
+}
+.tituloReservas{
+    color: #96211f ;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+/* css del main de Reservas*/
+
+/* css del main de galeria*/
+/* cambiar diseño, no me convence, tengo pensado un carrucel de imagenes, todavia no se hacerlo*/
+.mainGaleria{
+    width: 100%;
+    height: 75rem;
+    background-image: url(../img/fondos/fondoMedio.png);
+}
+.textoGaleria{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.textoGaleria p{
+    font-size: 1.875rem; 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5625rem;
+}                          
+.contenedorDetails1{  /* Tuve problemas con el diseño y formato de los botones, hay que arreglarlo, todavia no se como*/
+    padding-top: 5rem;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+.contenedorDetails2{
+    padding-top: 6.25rem;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+summary{
+    max-width: 13.75rem;
+    color: white;
+    padding: .3125rem 1.5625rem;
+    background-color:#96211f;
+    border-radius: .3125rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.875rem
+}
+/* css del main de galeria*/
+
+/* css del main de lanzamientos*/
+.mainLanzamientos{
+    width: 100%;
+    height: 50rem;
+    background-image: url(../img/fondos/fondoMedio.png);
+}
+.textoLanzamientos{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.textoLanzamientos p {
+    font-size: 1.875rem; 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5625rem;
+}
+.contenedorImagenLanzamientos{
+    display: flex;
+    justify-content: center;
+    padding-top: 6.25rem
+}
+.texto2Lanzamientos{
+    text-align: center;
+    font-size: 1.875rem; 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5625rem;
+}
+.texto2Lanzamientos p{
+    padding-top: 3.125rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.25rem;
+}
+/* css del main de lanzamientos*/
+
+/* css del main de trabaja con nosotros*/
+.mainTrabajaConNosotros{
+    width: 100%;
+    height: 75rem;
+    background-image: url(../img/fondos/fondoMedio.png);
+}
+.tituloMainTrabajaConNosotros{
+    display: flex;
+    justify-content: center;
+    padding-top: 3.125rem;
+    color: #96211f ;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.texto1TrabajaConNosotros{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.texto1TrabajaConNosotros p{
+    font-size: 1.875rem; 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5625rem;
+    
+}
+.contenedorP1TrabajaConNosotros {
+    background-image: url(../img/fondos/fondoOscuro.png);
+    border-radius: .9375rem;
+    width: 56.25rem;
+    margin-left: 3.125rem;
+}
+.contenedor1TrabajaConNosotros{
+    display: flex;
+    align-items: center;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+.contenedor1TrabajaConNosotros p{
+    padding-right: 6.25rem;
+    padding-left: 6.25rem;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.contenedorP2TrabajaConNosotros{
+    background-image: url(../img/fondos/fondoOscuro.png);
+    border-radius: .9375rem;
+    width: 56.25rem;
+    margin-right: 3.125rem;
+
+}
+.contenedor2TrabajaConNosotros{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+.contenedor2TrabajaConNosotros p{
+    padding-right: 6.25rem;
+    padding-left: 6.25rem;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+/* css del main de trabaja con nosotros*/
+
+/* css del main de testimonios*/
+.mainTestimonios{
+    width: 100%;
+    height: 50rem;
+    background-image: url(../img/fondos/fondoMedio.png);
+}
+.contenedorTituloTestimonios{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.contenedorTituloTestimonios P {
+    font-size: 1.875rem; 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5625rem;
+}
+.contenedorTestimonios{
+display: flex;
+justify-content: space-around;
+padding-top: 9.375rem;
+}
+/* css del main de testimonios*/
+
+
+/* css de los header*/
+.header{
+    height: 12.5rem;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/fondos/fondoOscuro.png);
+}
+.contenedorLogoHeader{
+    width: 18.75rem;
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.logoHeader{
+    width: 21.875rem;
+    height: auto;
+}
+.contenedorMenuHeader{
+width: 100%;
+display: flex;
+flex-direction: row-reverse;
+position: absolute;
+top: 5.625rem;
+right: 9.375rem;
+}
+.menuHeader li{
+    list-style: none;
+    display: inline;
+    margin-right: 3.125rem
+    }
+.menuHeader li a{
+    font-size: .9375rem;
+    text-decoration: none;
+    padding: .625rem 1.25rem;
+    background-color: #dccbb6;
+    border: .0625rem solid #252525;
+    border-radius: .5rem;
+    color: #383838;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* css de los header*/
+
+/* css de los footers*/
+footer{
+    width: 100%;
+    height: 20rem;
+    background-color: #2e2d2d;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "ubicacion logo horarios"
+    "ubicacion logo instagram";
+}
+footer div h3{
+    margin: 1.25rem;
+}
+.ubicacion{
+grid-area: ubicacion;
+justify-self: center;
+align-self: center;
+}
+.logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+}
+.horarios{
+    grid-area: horarios;
+    justify-self: center;
+    align-self: center;
+}
+.instagram{
+    grid-area: instagram;
+    justify-self: center;
+    align-self: center;
+}
+/* css de los footers*/
+
+
+/* css de los media queries*/
+@media (max-width:1440px){
+/* media de los headers*/
+    .contenedorLogoHeader{
+        left: 1.25rem;
+    }
+    .logoHeader{
+        width: 20rem;
+    }
+    .menuHeader li a{
+        width: 100vh;
+        font-size: .8125rem;
+    }
+    .contenedorMenuHeader{
+        position: absolute;
+        left: 1.25rem;
+        }
+/* media de los headers*/
+
+/* media del index*/
+    .contenedorLogoIndex{
+        height: 12.5rem;
+    }
+    .contenedorMenuIndex{
+        padding-top: 18.75rem;
+    }
+    .menuIndex li{
+        margin-right: 5rem;
+    }
+    .menuIndex li a{
+        font-size: .9375rem;
+        padding: .625rem .625rem;
+    }
+    .contenedorFotoTexto{
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+    }
+/* media del index*/
+
+    /* media de galeria*/
+    /* media de galeria*/
+}
+@media (max-width:1024px){
+    /* media de los headers*/
+    .contenedorLogoHeader{
+        left: 1.25rem;
+    }
+    .logoHeader{
+        width: 20rem;
+    }
+    .menuHeader li a{
+        font-size: .625rem;
+    }
+    .contenedorMenuHeader{
+        left: 1.875rem;
+        }
+/* media de los headers*/
+
+}
+
