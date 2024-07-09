@@ -175,10 +175,9 @@ pero espero que a quien revise esto tambien le sirva para una mejor correccion, 
 /* css del main de Reservas*/
 
 /* css del main de galeria*/
-/* cambiar diseño, no me convence, tengo pensado un carrucel de imagenes, todavia no se hacerlo*/
 .mainGaleria{
     width: 100%;
-    height: 75rem;
+    height: 81.25rem;
     background-image: url(../img/fondos/fondoMedio.png);
 }
 .textoGaleria{
@@ -196,31 +195,18 @@ pero espero que a quien revise esto tambien le sirva para una mejor correccion, 
     font-style: normal;
     text-align: center;
     font-size: 1.5625rem;
-}                          
-.contenedorDetails1{  /* Tuve problemas con el diseño y formato de los botones, hay que arreglarlo, todavia no se como*/
-    padding-top: 5rem;
-    height: 50vh;
-    display: flex;
-    justify-content: space-around;
-}
-.contenedorDetails2{
-    padding-top: 6.25rem;
-    height: 50vh;
-    display: flex;
-    justify-content: space-around;
-}
-summary{
-    max-width: 13.75rem;
-    color: white;
-    padding: .3125rem 1.5625rem;
-    background-color:#96211f;
-    border-radius: .3125rem;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.875rem
-}
+}          
+.carousel-inner{ /*Complicaciones a la hora de hacer el carrusel, me salio pero necesito mas practica*/
+    padding-top: 3.75rem;
+}     
+.carousel-item img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}           
 /* css del main de galeria*/
 
 /* css del main de lanzamientos*/
