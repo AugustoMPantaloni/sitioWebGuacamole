@@ -180,6 +180,12 @@ pero espero que a quien revise esto tambien le sirva para una mejor correccion, 
     height: 81.25rem;
     background-image: url(../img/fondos/fondoMedio.png);
 }
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23343a40" viewBox="0 0 8 8"><path d="M4 0L3 1l2.5 2.5L3 6 4 7l4-4-4-4z"/></svg>');
+}
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23343a40" viewBox="0 0 8 8"><path d="M4 0L5 1 2.5 3.5 5 6 4 7 0 3 4 0z"/></svg>');
+}
 .textoGaleria{
     width: 100%;
     height: 10rem;
@@ -382,28 +388,22 @@ padding-top: 9.375rem;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-right: 15.625rem;
 }
 .logoHeader{
     width: 21.875rem;
     height: auto;
 }
-.contenedorMenuHeader{
-width: 100%;
-display: flex;
-flex-direction: row-reverse;
-position: absolute;
-top: 5.625rem;
-right: 9.375rem;
+.container-fluid{
+    height: 12.5rem;
+    overflow: hidden;
+    background-image: url(../img/fondos/fondoOscuro.png);
 }
-.menuHeader li{
-    list-style: none;
-    display: inline;
-    margin-right: 3.125rem
-    }
-.menuHeader li a{
-    font-size: .9375rem;
+
+.nav-item{
+    font-size: 1.125rem;
     text-decoration: none;
-    padding: .625rem 1.25rem;
+    padding: .3125rem .9375rem;
     background-color: #dccbb6;
     border: .0625rem solid #252525;
     border-radius: .5rem;
@@ -462,20 +462,6 @@ align-self: center;
 /* css de los media queries*/
 @media (max-width:1440px){
 /* media de los headers*/
-    .contenedorLogoHeader{
-        left: 1.25rem;
-    }
-    .logoHeader{
-        width: 20rem;
-    }
-    .menuHeader li a{
-        width: 100vh;
-        font-size: .8125rem;
-    }
-    .contenedorMenuHeader{
-        position: absolute;
-        left: 1.25rem;
-        }
 /* media de los headers*/
 
 /* media del index*/
@@ -497,25 +483,40 @@ align-self: center;
         padding-right: 1.875rem;
     }
 /* media del index*/
-
-    /* media de galeria*/
-    /* media de galeria*/
 }
+
 @media (max-width:1024px){
     /* media de los headers*/
     .contenedorLogoHeader{
         left: 1.25rem;
     }
     .logoHeader{
-        width: 20rem;
+        width: 17rem;
     }
-    .menuHeader li a{
-        font-size: .625rem;
-    }
-    .contenedorMenuHeader{
-        left: 1.875rem;
-        }
 /* media de los headers*/
-
 }
-
+.contenedorLogoHeader {
+    flex: 1;
+    max-width: 300px;
+}
+.logoHeader {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 1440px) {
+    .contenedorLogoHeader {
+        max-width: 150px;
+    }
+    .nav-pills .nav-item .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .contenedorLogoHeader {
+        max-width: 100px;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+}

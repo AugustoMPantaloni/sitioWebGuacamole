@@ -3,56 +3,71 @@
     <head>
         <title>Reserva</title>
         <link rel="short cut icon" href="../img/logo/favicon-32x32.jpg" /> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css"> 
     </head>
     <body>
-        <header class="header">
-            <div class="contenedorLogoHeader">
-                <img src="../img/logo/Logo.png" alt="Mexicano sentado" class="logoHeader"/> 
-            </div>    
-            <nav class="contenedorMenuHeader">
-                <ul class="menuHeader">
-                    <li> <a href="../index.html"> INICIO </a> </li> 
-                    <li> <a href="https://drive.google.com/file/d/12Zu2Rbrp-RJUM7R3kZCcy8McT06sdP1E/view" target="_blank"> NUESTRA CARTA </a> </li>
-                    <li> <a href="Galeria.html"> GALERIA </a> </li>
-                    <li> <a href="Lanzamientos.html"> LANZAMIENTOS </a> </li>
-                    <li> <a href="#"> RESERVA AQUI </a> </li>
-                    <li> <a href="trabajaConNosotros.html"> TRABAJA CON NOSOTROS </a> </li>
-                    <li> <a href="Testimonios.html"> TESTIMONIOS </a> </li>
+        <header>
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="contenedorLogoHeader">
+                    <img src="../img/logo/Logo.png" alt="Mexicano sentado" class="logoHeader"/> 
+                </div>    
+                <ul class="nav nav-pills">
+                    <li class="nav-item mx-4">
+                        <a href="../index.html" class="btn">INICIO</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a href="https://drive.google.com/file/d/12Zu2Rbrp-RJUM7R3kZCcy8McT06sdP1E/view" target="_blank" class="btn">NUESTRA CARTA</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a href="Galeria.html" class="btn">GALERIA</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a href="Lanzamientos.html" class="btn">LANZAMIENTOS</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a href="#" class="btn">RESERVA AQUI</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a href="trabajaConNosotros.html" class="btn">TRABAJA CON NOSOTROS</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a href="Testimonios.html" class="btn">TESTIMONIOS</a>
+                    </li>
                 </ul>
-            </nav>    
-        </header>    
+            </div>
+        </header>  
         <main class="mainReservas">
             <div class="contenedorTituloReservas">
                 <h1 class="tituloReservas"> ¡RESERVA TU MESA! </h1>
             </div>
             <div class="formularioReservas">    
                 <form>
-                    <div>
+                    <div class="h5">
                         <label for="sucursal">Sucursal:</label>
-                        <select name="Sucursal" id="sucursal" required>
+                        <select  name="Sucursal" id="sucursal" required>
                             <option value="" disabled selected>Sucursal</option>
                             <option value="Barrio Alta Cordoba">Barrio Alta Cordoba</option>
                             <option value="Barrio General Paz">Barrio General Paz</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="h5">
                         <label for="nombre">Nombre completo:</label>
                         <input id="nombre" name="nombre" placeholder="Nombre completo" type="text" required>
                     </div>
-                    <div>
+                    <div class="h5">
                         <label for="telefono">Número de teléfono:</label>
                         <input id="telefono" name="telefono" placeholder="Número de teléfono" type="text" required>
                     </div>
-                    <div>
+                    <div class="h5">
                         <label for="cantidad de personas">Cantidad de personas:</label>
                         <input id="cantidad de personas" name="Cantidad de personas" placeholder="Cantidad de personas" type="tex" required>
                     </div>
-                    <div>
+                    <div class="h5">
                         <label for="fecha">Fecha de reserva:</label>
                         <input id="fecha" name="Fecha" type="date" required>
                     </div>
-                    <div class="botonReservar">
+                    <div class="botonReservar ">
                         <input type="submit" value="Reservar" class="reservar">
                     </div>    
                 </form>
@@ -60,16 +75,16 @@
         </main>
         <footer>
             <section class="ubicacion">
-                <div> 
-                    <h3> ¿DONDE ESTAMOS? </h3> 
+                <div class="h5"> 
+                    ¿DONDE ESTAMOS? 
                 </div>
                 <div>
-                    <h3> -Cordoba, Argentina- </h3>
-                    <h4> -Barrio Alta Cordoba- </h4> 
-                    <h5> Roque sanez peña 1533 </h5>
-                    <h4> - Barrio General Paz> </h4>
-                    <h5> 25 de mayo 725 </h5>
-                    <h4> TEL: 3513927748 </h4>
+                    <h3 class="h5"> -Cordoba, Argentina- </h3>
+                    <h4 class="h6"> -Barrio Alta Cordoba- </h4> 
+                    <h5 class="h7"> Roque sanez peña 1533 </h5>
+                    <h4 class="h6"> - Barrio General Paz> </h4>
+                    <h5 class="h7"> 25 de mayo 725 </h5>
+                    <h4 class="h6"> TEL: 3513927748 </h4>
                 </div>    
             </section>
             <section class="logo">
@@ -79,16 +94,16 @@
             </section>    
             <section class="horarios">
                 <div>
-                    <h3> HORARIOS </h3>
+                    <h3 class="h5"> HORARIOS </h3>
                 </div>
                 <div> 
-                    <h3> De martes a domingos </h3>
-                    <h3> 20 hs a 00 hs </h3>
+                    <h3 class="h5"> De martes a domingos </h3>
+                    <h3 class="h5"> 20 hs a 00 hs </h3>
                 </div>
             </section>
             <section class="instagram"> 
                 <div>
-                    <h3> ¡SÌGUENOS! </h3>
+                    <h3 class="h5"> ¡SÌGUENOS! </h3>
                 </div> 
                 <div>
                     <a href="https://www.instagram.com/guacamole.altacordoba/" target="_blank">
@@ -97,5 +112,7 @@
                 </div>
             </section>            
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
 </html>
