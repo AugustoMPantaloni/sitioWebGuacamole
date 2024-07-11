@@ -229,7 +229,6 @@ pero espero que a quien revise esto tambien le sirva para una mejor correccion, 
     padding-top: 3rem;
 }
 .textoLanzamientos p {
-    font-size: 1.875rem; 
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -241,25 +240,6 @@ pero espero que a quien revise esto tambien le sirva para una mejor correccion, 
     display: flex;
     justify-content: center;
     padding-top: 6.25rem
-}
-.texto2Lanzamientos{
-    text-align: center;
-    font-size: 1.875rem; 
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.5625rem;
-}
-.texto2Lanzamientos p{
-    padding-top: 3.125rem;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.25rem;
 }
 /* css del main de lanzamientos*/
 
@@ -312,6 +292,7 @@ pero espero que a quien revise esto tambien le sirva para una mejor correccion, 
 .contenedor1TrabajaConNosotros p{
     padding-right: 6.25rem;
     padding-left: 6.25rem;
+    margin-bottom: 0rem;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -381,6 +362,7 @@ padding-top: 9.375rem;
     overflow: hidden;
     background-image: url(../img/fondos/fondoOscuro.png);
 }
+
 .contenedorLogoHeader{
     width: 18.75rem;
     height: 12.5rem;
@@ -459,64 +441,133 @@ align-self: center;
 /* css de los footers*/
 
 
-/* css de los media queries*/
 @media (max-width:1440px){
-/* media de los headers*/
-/* media de los headers*/
-
-/* media del index*/
-    .contenedorLogoIndex{
-        height: 12.5rem;
-    }
-    .contenedorMenuIndex{
-        padding-top: 18.75rem;
-    }
-    .menuIndex li{
-        margin-right: 5rem;
-    }
-    .menuIndex li a{
-        font-size: .9375rem;
-        padding: .625rem .625rem;
-    }
-    .contenedorFotoTexto{
-        padding-left: 1.875rem;
-        padding-right: 1.875rem;
-    }
-/* media del index*/
+/* headers*/
+.nav-item {
+    font-size: .625rem;
+    padding: .125rem .3125rem;
+    white-space: nowrap;
 }
+.nav-pills{
+    flex-wrap: nowrap;
+}
+.contenedorLogoHeader{
+    margin-right: 0rem;
+}
+/*headers*/
+
+/*index*/
+.contenedorLogoIndex{
+height: 12.5rem;
+    }
+.contenedorMenuIndex{
+    padding-top: 18.75rem;
+    }
+.menuIndex li{
+    margin-right: 5rem;
+    }
+.menuIndex li a{
+    font-size: .9375rem;
+    padding: .625rem .625rem;
+    }
+.contenedorFotoTexto{
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    }
+/*index*/
+
+/*galeria*/
+.mainGaleria{
+    height: 74rem;
+}
+/* galeria*/
+}
+
 
 @media (max-width:1024px){
-    /* media de los headers*/
-    .contenedorLogoHeader{
-        left: 1.25rem;
-    }
-    .logoHeader{
-        width: 17rem;
-    }
-/* media de los headers*/
+/*index*/
+.estilosMediaLogoIndex{
+    width: 600px;
+    height: 450px;
 }
-.contenedorLogoHeader {
-    flex: 1;
-    max-width: 300px;
+.menuIndex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+.menuIndex a {
+    display: block;
+    }
+.menuIndex li:nth-child(5){
+    margin-bottom: 30px;
 }
-.logoHeader {
-    width: 100%;
+.mainIndex{
+    height: 60rem;
+}
+.estiloImagen{
+    width: 18.75rem;
+    height: 31.25rem;
+}
+.contenedorFotoTexto{
+    padding-top: 4rem;
+    gap: 1.25rem;
+}
+.pIndex{
+    font-size: 1.25rem;
+    padding-top: 1.500rem;
+}
+.contenedorPIndex{
     height: auto;
+    padding-top: 0;
 }
-@media (max-width: 1440px) {
-    .contenedorLogoHeader {
-        max-width: 150px;
-    }
-    .nav-pills .nav-item .btn {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-    }
+.contenedorFoto1, .contenedorFoto2{
+    padding-top: 1.25rem;
 }
-@media (max-width: 768px) {
-    .contenedorLogoHeader {
-        max-width: 100px;
-    }
-    .navbar-collapse {
-        text-align: center;
-    }
+/*index*/
+
+/*header*/
+.mx-4 {
+    margin-left: .3125rem !important; /* La unica forma que encontre de pisar el margen de mx-4 fue con important, se que no es lo ideal pero no encontre otra forma de hacerlo*/
+    margin-right: .3125rem !important;
 }
+.btn{
+    padding: .1875rem;
+}
+/*header*/
+
+/*galeria*/
+.mainGaleria{
+    height: 60rem;
+}
+/*galeria*/
+
+/*lanazamientos*/
+.mainLanzamientos{
+    height: 43.75rem;
+}
+.textoLanzamientos  p {
+    font-size: 1.3125rem;
+}
+.contenedorImagenLanzamientos{
+    padding-top: 3.125rem
+}
+/*lanzamientos*/
+
+/*trabaja con nosotros*/
+.texto1TrabajaConNosotros p{
+    font-size: 1.3125rem
+}
+/*trabaja con nosotros*/
+
+/*testimonios*/
+.contenedorTituloTestimonios P {
+    font-size: 1.3125rem;
+}
+.fotoTestimonio{
+    width: 18.75rem;
+    height: 12.5rem;
+}
+/*testimonios*/
+}
+
+@media (max-width:768px){}
