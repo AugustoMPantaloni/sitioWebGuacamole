@@ -534,6 +534,9 @@ height: 12.5rem;
 .btn{
     padding: .1875rem;
 }
+.container-fluid{
+    overflow: visible;
+}
 /*header*/
 
 /*galeria*/
@@ -671,6 +674,16 @@ height: 25rem;
 }
 
 @media (max-width: 425px){
+/*headers*/
+.container-fluid{
+    overflow:visible;
+}
+.nav, .nav-pills{
+    flex-direction: column;
+    row-gap: .125rem;
+}
+/*header*/ 
+
 /*index*/
 .mainIndex{
     height: 85rem;
@@ -729,7 +742,7 @@ height: 25rem;
     height: 22rem;
     width: auto;
     order: 2;
-}  /*aca se que podria haber haberlo echo en menos lineas de codigo pero preferi hacerlo asi por comoidad por si tengo que arreglar algo*/
+}  /*aca se que podria haber haberlo echo en menos lineas de codigo pero preferi hacerlo asi por comodidad por si tengo que arreglar algo*/
 .contenedor2TrabajaConNosotros{
     flex-direction: column;
     gap: 1.25rem;
@@ -750,7 +763,130 @@ height: 25rem;
     font-size: 1.125rem;
 }
 /*testimonios*/
+
+/*footer*/
+footer{
+    height: 15rem;
 }
+footer .h5{
+    font-size: .9375rem;
+}
+footer .h6{
+    font-size: .75rem;
+}
+footer .h7{
+    font-size: .625rem;
+}
+.estiloLogoFooter{
+    width: 15.625rem;
+    height: 12.5rem;
+}
+.estiloLogoInstagram{
+width: 2.5rem;
+height: 2.5rem;
+}
+/*footer*/
+}
+
+@media (max-width: 375px){
+/*header*/
+.contenedorLogoHeader{
+width: 30rem;
+}
+/*header*/
+
+/*galeria*/
+.carousel-inner{
+    padding-top: 2rem;
+}
+.textoGaleria P{
+    font-size: 1rem
+}
+/*galeria*/
+
+/*lanzamientos*/
+.textoLanzamientos p{
+    font-size: 1rem
+}
+.mainLanzamientos{
+    height: 45rem;
+}
+/*lanzamientos*/
+
+/*Reservas*/
+.mainReservas{
+    height: 32rem;
+}
+.contenedorTituloReservas{
+    padding-top: 3rem;
+}
+.formularioReservas {
+    padding-top: 0;
+}
+.formularioReservas div{
+    margin: 2rem;
+    font-size: 1rem
+}
+/*reservas*/
+
+/*trabaja con nosotros*/
+.texto1TrabajaConNosotros p{
+    font-size: 1rem;
+}
+/*trabaja con nosotros*/
+
+/*testimonios*/
+.contenedorTituloTestimonios p{
+    font-size: 1rem;
+}
+/*testimonios*/
+}
+
+@media (max-width: 320px){
+/*index*/
+.estilosMediaLogoIndex{
+    height: 21rem;
+}
+/*index*/
+
+/*footer*/
+.estiloLogoFooter{
+    width: 12rem;
+    height: 8rem;
+}
+/*footer*/
+
+/*header*/
+.contenedorLogoHeader{
+    width: 10rem;
+    overflow: visible;
+}
+.logoHeader{
+    height: 100%;
+}
+/*header*/
+
+/*lanzamientos*/
+.mainLanzamientos{
+    height: 52rem;
+}
+/*lanzamientos*/
+
+/*reservas*/
+.mainReservas{
+    height: 30rem;
+}
+.formularioReservas div{
+    margin: 1.5625rem;
+    font-size: .875rem;
+}
+/*reservas*/
+}
+
+
+
+
+
 
 
 
