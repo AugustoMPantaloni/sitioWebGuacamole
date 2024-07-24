@@ -1,904 +1,780 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/* las notas a continuacion son para mi organizacion y recordar las cosas, no darle mucha atencion,
-pero espero que a quien revise esto tambien le sirva para una mejor correccion, muchas gracias */
+.headerIndex {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+.contenedorVideoIndex {
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+.contenedorLogoIndex {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 18.75rem; }
 
-/*ver de cambiar todos los fondos y colores en general, todavia no me decido*/
-
-/* css del header del index*/
-.headerIndex{
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-.contenedorVideoIndex{
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-}
-.contenedorLogoIndex{
-    width: 100%;
-    height: 25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 18.75rem;
-}
-.contenedorMenuIndex{
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    padding-left: 5.625rem;
-    padding-top: 15.625rem;
-}
-.menuIndex li{
+.contenedorMenuIndex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 5.625rem;
+  padding-top: 15.625rem; }
+  .contenedorMenuIndex li {
     list-style: none;
     display: inline;
-    margin-right: 6.25rem
-}
-.menuIndex li a{
-    font-size: 1.25rem;
-    text-decoration: none;
-    padding: .625rem 1.25rem;
-    background-color: #dccbb6;
-    border: .0625rem solid #252525;
-    border-radius: .5rem;
-    color: #383838;
-    font-family: "Oswald", sans-serif;
+    margin-right: 6.25rem; }
+    .contenedorMenuIndex li a {
+      font-size: 1.25rem;
+      text-decoration: none;
+      padding: .625rem 1.25rem;
+      background-color: #dccbb6;
+      border: .0625rem solid #252525;
+      border-radius: .5rem;
+      color: #383838;
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal; }
+
+.mainIndex {
+  height: 65rem;
+  width: 100%;
+  background-image: url("../img/fondos/fondoMedio.png");
+  overflow: hidden; }
+
+.tituloMainIndex h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-top: 6.25rem;
+  color: #96211f;
+  font-size: 2.5rem;
+  font-family: "Oswald";
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal; }
+
+.contenedorFotoTexto {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: row;
+  flex-wrap: none;
+  gap: none;
+  padding-top: 6.25rem;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem; }
+
+.contenedorPIndex {
+  height: 35rem;
+  width: 35rem;
+  border-radius: .625rem;
+  background-image: url("../img/fondos/fondoOscuro.png");
+  padding-top: 2.5rem;
+  padding-left: .625rem;
+  padding-right: .625rem;
+  overflow: hidden; }
+
+.pIndex {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  text-align: center;
+  font-size: 1.5625rem;
+  font-family: "Oswald";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; }
+
+.estiloImagen {
+  border-radius: .625rem; }
+
+.container-fluid {
+  height: 12.5rem;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../img/fondos/fondoOscuro.png"); }
+
+.contenedorLogoHeader {
+  width: 18.75rem;
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 15.625rem; }
+
+.logoHeader {
+  width: 21.875rem;
+  height: auto; }
+
+.nav-item {
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding: .3125rem .9375rem;
+  background-color: #dccbb6;
+  border: .0625rem solid #252525;
+  border-radius: .5rem;
+  color: #383838;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; }
+
+.mainGaleria {
+  width: 100%;
+  height: 81.25rem;
+  background-image: url("../img/fondos/fondoMedio.png"); }
+
+.textoGaleria {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-top: 3rem; }
+  .textoGaleria p {
+    font-size: 1.5625rem;
+    font-family: "Oswald";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-/* css del header del index*/
+    text-align: center; }
 
-/* css del main del index*/
-.mainIndex{
-    height:65rem;
-    width: 100%;
-    background-image: url(../img/fondos/fondoMedio.png);
-    overflow: hidden;
-}
-.tituloMainIndex{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 6.25rem;
-    color: #96211f ;
+.mainLanzamientos {
+  width: 100%;
+  height: 50rem;
+  background-image: url("../img/fondos/fondoMedio.png"); }
+
+.textoLanzamientos {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-top: 3.125rem; }
+  .textoLanzamientos p {
     font-size: 1.5625rem;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-.contenedorFotoTexto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 6.25rem;
-    padding-left: 6.25rem;
-    padding-right: 6.25rem;
-}
-.contenedorPIndex{
-    height: 35rem;
-    width: 35rem;
-    border-radius: .625rem;
-    background-image: url(../img/fondos/fondoOscuro.png);
-    padding-top: 2.5rem;
-    padding-left: .625rem;
-    padding-right: .625rem;
-    overflow: hidden;
-}
-.pIndex{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: 1.875rem; 
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.5625rem;
-}
-.estiloImagen{
-    border-radius: .625rem;
-}
-/* css del main del index*/
-
-/* css del main de Reservas*/
-.mainReservas{
-    width: 100%;
-    height: 45rem;
-    background-image: url(../img/fondos/fondoMedio.png);
-}
-.contenedorTituloReservas{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
-}
-.formularioReservas{
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
-    font-size: 1.875rem; 
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-align: left;
-    font-size: 1.5625rem;
-}
-
-.formularioReservas div {
-    margin: 1.25rem;
-}
-
-.botonReservar{
-    display: flex;
-    justify-content: center;
-    padding-top: 1.25rem;
-}
-.reservar{
-    padding: .3125rem 1.5625rem;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.25rem;
-    background-color: #96211f;
-    color: white;
-    border-radius: .3125rem;
-}
-.tituloReservas{
-    color: #96211f ;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-/* css del main de Reservas*/
-
-/* css del main de galeria*/
-.mainGaleria{
-    width: 100%;
-    height: 81.25rem;
-    background-image: url(../img/fondos/fondoMedio.png);
-}
-.carousel-control-next-icon {
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23343a40" viewBox="0 0 8 8"><path d="M4 0L3 1l2.5 2.5L3 6 4 7l4-4-4-4z"/></svg>');
-}
-.carousel-control-prev-icon {
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23343a40" viewBox="0 0 8 8"><path d="M4 0L5 1 2.5 3.5 5 6 4 7 0 3 4 0z"/></svg>');
-}
-.textoGaleria{
-    width: 100%;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 3rem;
-}
-.textoGaleria p{
-    font-size: 1.875rem; 
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 1.5625rem;
-}          
-.carousel-inner{ /*Complicaciones a la hora de hacer el carrusel, me salio pero necesito mas practica*/
-    padding-top: 3.75rem;
-}     
-.carousel-item img{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    height: auto;
-    border: 2px solid #000000;
-    border-radius: 6px;
-}           
-/* css del main de galeria*/
+    margin-bottom: 0; }
 
-/* css del main de lanzamientos*/
-.mainLanzamientos{
-    width: 100%;
-    height: 50rem;
-    background-image: url(../img/fondos/fondoMedio.png);
-}
-.textoLanzamientos{
-    width: 100%;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 3.125rem;
-}
-.textoLanzamientos p {
-    font-family: "Oswald", sans-serif;
+.contenedorImagenLanzamientos {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 6.25rem; }
+
+.mainReservas {
+  width: 100%;
+  height: 45rem;
+  background-image: url("../img/fondos/fondoMedio.png"); }
+
+.contenedorTituloReservas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-top: 5rem; }
+
+.tituloReservas {
+  color: #96211f;
+  font-family: "Oswald";
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center; }
+
+.formularioReservas {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  width: 100%;
+  height: 20rem;
+  font-family: "Oswald";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  padding-top: 5rem; }
+  .formularioReservas div {
+    margin: 1.25rem; }
+
+.botonReservar {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-top: 1.25rem; }
+
+.reservar {
+  padding: .3125rem 1.5625rem;
+  background-color: #96211f;
+  color: white;
+  border-radius: .3125rem;
+  font-family: "Oswald";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; }
+
+.mainTrabajaConNosotros {
+  width: 100%;
+  height: 75rem;
+  background-image: url("../img/fondos/fondoMedio.png"); }
+
+.tituloMainTrabajaConNosotros {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-top: 3.125rem;
+  color: #96211f;
+  text-align: center;
+  font-family: "Oswald";
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal; }
+
+.texto1TrabajaConNosotros {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-top: 3rem; }
+  .texto1TrabajaConNosotros p {
+    font-size: 1.5625rem;
+    font-family: "Oswald";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
-    font-size: 1.5625rem;
-    margin-bottom: 0;
-}
-.contenedorImagenLanzamientos{
-    display: flex;
-    justify-content: center;
-    padding-top: 6.25rem
-}
-/* css del main de lanzamientos*/
+    text-align: center; }
 
-/* css del main de trabaja con nosotros*/
-.mainTrabajaConNosotros{
-    width: 100%;
-    height: 75rem;
-    background-image: url(../img/fondos/fondoMedio.png);
-}
-.tituloMainTrabajaConNosotros{
-    display: flex;
-    justify-content: center;
-    padding-top: 3.125rem;
-    color: #96211f ;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-.texto1TrabajaConNosotros{
-    width: 100%;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 3rem;
-}
-.texto1TrabajaConNosotros p{
-    font-size: 1.875rem; 
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.5625rem;
-    
-}
 .contenedorP1TrabajaConNosotros {
-    background-image: url(../img/fondos/fondoOscuro.png);
-    border-radius: .9375rem;
-    width: 56.25rem;
-    margin-left: 3.125rem;
-}
-.contenedor1TrabajaConNosotros{
-    display: flex;
-    align-items: center;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-}
-.contenedor1TrabajaConNosotros p{
+  background-image: url("../img/fondos/fondoOscuro.png");
+  border-radius: .9375rem;
+  width: 56.25rem;
+  margin-left: 3.125rem; }
+
+.contenedor1TrabajaConNosotros {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem; }
+  .contenedor1TrabajaConNosotros p {
     padding-right: 6.25rem;
     padding-left: 6.25rem;
     margin-bottom: 0rem;
     text-align: center;
-    font-family: "Oswald", sans-serif;
+    font-size: 1.25rem;
+    font-family: "Oswald";
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
-    font-size: 1.25rem;
-    text-align: center;
-}
-.contenedorP2TrabajaConNosotros{
-    background-image: url(../img/fondos/fondoOscuro.png);
-    border-radius: .9375rem;
-    width: 56.25rem;
-    margin-right: 3.125rem;
+    font-style: normal; }
 
-}
-.contenedor2TrabajaConNosotros{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-}
-.contenedor2TrabajaConNosotros p{
+.contenedorP2TrabajaConNosotros {
+  background-image: url("../img/fondos/fondoOscuro.png");
+  border-radius: .9375rem;
+  width: 56.25rem;
+  margin-right: 3.125rem; }
+
+.contenedor2TrabajaConNosotros {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem; }
+  .contenedor2TrabajaConNosotros p {
     padding-right: 6.25rem;
     padding-left: 6.25rem;
     text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.25rem;
-}
-/* css del main de trabaja con nosotros*/
-
-/* css del main de testimonios*/
-.mainTestimonios{
-    width: 100%;
-    height: 50rem;
-    background-image: url(../img/fondos/fondoMedio.png);
-}
-.contenedorTituloTestimonios{
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
-}
-.contenedorTituloTestimonios P {
-    font-size: 1.875rem; 
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; }
+
+.mainTestimonios {
+  width: 100%;
+  height: 50rem;
+  background-image: url("../img/fondos/fondoMedio.png"); }
+
+.contenedorTituloTestimonios {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-top: 5rem; }
+  .contenedorTituloTestimonios p {
     text-align: center;
     font-size: 1.5625rem;
-}
-.contenedorTestimonios{
-display: flex;
-justify-content: space-around;
-padding-top: 9.375rem;
-}
-/* css del main de testimonios*/
-
-
-/* css de los header*/
-.header{
-    height: 12.5rem;
-    width: 100%;
-    overflow: hidden;
-    background-image: url(../img/fondos/fondoOscuro.png);
-}
-
-.contenedorLogoHeader{
-    width: 18.75rem;
-    height: 12.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-right: 15.625rem;
-}
-.logoHeader{
-    width: 21.875rem;
-    height: auto;
-}
-.container-fluid{
-    height: 12.5rem;
-    overflow: hidden;
-    background-image: url(../img/fondos/fondoOscuro.png);
-}
-
-.nav-item{
-    font-size: 1.125rem;
-    text-decoration: none;
-    padding: .3125rem .9375rem;
-    background-color: #dccbb6;
-    border: .0625rem solid #252525;
-    border-radius: .5rem;
-    color: #383838;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
-}
-/* css de los header*/
+    font-style: normal; }
 
-/* css de los footers*/
-footer{
-    width: 100%;
-    height: 20rem;
-    background-color: #2e2d2d;
-    color: white;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-areas:
-    "ubicacion logo horarios"
-    "ubicacion logo instagram";
-}
-footer div h3{
-    margin: 1.25rem;
-}
-.ubicacion{
-grid-area: ubicacion;
-justify-self: center;
-align-self: center;
-}
-.logo{
-    grid-area: logo;
-    justify-self: center;
-    align-self: center;
-}
-.horarios{
-    grid-area: horarios;
-    justify-self: center;
-    align-self: center;
-}
-.instagram{
-    grid-area: instagram;
-    justify-self: center;
-    align-self: center;
-}
-/* css de los footers*/
+.contenedorTestimonios {
+  display: flex;
+  justify-content: space-around;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: none;
+  gap: none;
+  padding-top: 9.375rem; }
 
+footer {
+  width: 100%;
+  height: 20rem;
+  background-color: #2e2d2d;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto;
+  column-gap: 0;
+  row-gap: 0;
+  grid-template-areas: "ubicacion logo horarios" "ubicacion logo instagram"; }
+  footer h3 {
+    margin: 1.25rem; }
 
-@media (max-width:1440px){
-/* headers*/
-.nav-item {
-    font-size: .625rem;
+.ubicacion {
+  grid-area: ubicacion;
+  justify-self: center;
+  align-self: center; }
+
+.logo {
+  grid-area: logo;
+  justify-self: center;
+  align-self: center; }
+
+.horarios {
+  grid-area: horarios;
+  justify-self: center;
+  align-self: center; }
+
+.instagram {
+  grid-area: instagram;
+  justify-self: center;
+  align-self: center; }
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23343a40" viewBox="0 0 8 8"><path d="M4 0L3 1l2.5 2.5L3 6 4 7l4-4-4-4z"/></svg>'); }
+
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23343a40" viewBox="0 0 8 8"><path d="M4 0L5 1 2.5 3.5 5 6 4 7 0 3 4 0z"/></svg>'); }
+
+.carousel-inner {
+  padding-top: 3.75rem; }
+
+.carousel-item img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  height: auto;
+  border: 2px solid #000000;
+  border-radius: 6px; }
+
+@media (max-width: 1440px) {
+  /* headers*/
+  .nav-item {
+    font-size: 0.9375rem;
     padding: .125rem .3125rem;
-    white-space: nowrap;
-}
-.nav-pills{
-    flex-wrap: nowrap;
-}
-.contenedorLogoHeader{
-    margin-right: 0rem;
-}
-/*headers*/
-
-/*index*/
-.contenedorLogoIndex{
-height: 12.5rem;
-    }
-.contenedorMenuIndex{
-    padding-top: 18.75rem;
-    }
-.menuIndex li{
-    margin-right: 5rem;
-    }
-.menuIndex li a{
-    font-size: .9375rem;
-    padding: .625rem .625rem;
-    }
-.contenedorFotoTexto{
+    white-space: nowrap; }
+  .nav-pills {
+    flex-wrap: nowrap; }
+  .contenedorLogoHeader {
+    margin-right: 0rem; }
+  /*headers*/
+  /*index*/
+  .contenedorLogoIndex {
+    height: 12.5rem; }
+  .contenedorMenuIndex {
+    padding-top: 18.75rem; }
+  .menuIndex li {
+    margin-right: 5rem; }
+  .menuIndex li a {
+    font-size: 0.9375rem;
+    padding: .625rem .625rem; }
+  .contenedorFotoTexto {
     padding-left: 1.875rem;
-    padding-right: 1.875rem;
-    }
-/*index*/
+    padding-right: 1.875rem; }
+  /*index*/
+  /*galeria*/
+  .mainGaleria {
+    height: 74rem; }
+  /* galeria*/ }
 
-/*galeria*/
-.mainGaleria{
-    height: 74rem;
-}
-/* galeria*/
-}
-
-
-@media (max-width:1024px){
-/*index*/
-.estilosMediaLogoIndex{
+@media (max-width: 1024px) {
+  /*index*/
+  .estilosMediaLogoIndex {
     width: 37.5rem;
-    height: 28.125rem;
-}
-.menuIndex {
+    height: 28.125rem; }
+  .menuIndex {
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    flex-direction: none;
+    flex-wrap: wrap;
+    gap: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    }
-.menuIndex a {
-    display: block;
-    }
-.menuIndex li:nth-child(5){
-    margin-bottom: 1.875rem;
-}
-.mainIndex{
-    height: 60rem;
-}
-.estiloImagen{
+    justify-content: center; }
+    .menuIndex a {
+      display: block; }
+    .menuIndex li:nth-child(5) {
+      margin-bottom: 1.875rem; }
+  .mainIndex {
+    height: 60rem; }
+  .estiloImagen {
     width: 18.75rem;
-    height: 31.25rem;
-}
-.contenedorFotoTexto{
+    height: 31.25rem; }
+  .contenedorFotoTexto {
     padding-top: 4rem;
-    gap: 1.25rem;
-}
-.pIndex{
+    gap: 1.25rem; }
+  .pIndex {
     font-size: 1.25rem;
-    padding-top: 1.500rem;
-}
-.contenedorPIndex{
+    padding-top: 1.500rem; }
+  .contenedorPIndex {
     height: auto;
-    padding-top: 0;
-}
-.contenedorFoto1, .contenedorFoto2{
-    padding-top: 1.25rem;
-}
-/*index*/
-
-/*header*/
-.mx-4 {
-    margin-left: .3125rem !important; /* La unica forma que encontre de pisar el margen de mx-4 fue con important, se que no es lo ideal pero no encontre otra forma de hacerlo*/
-    margin-right: .3125rem !important;
-}
-.btn{
-    padding: .1875rem;
-}
-.container-fluid{
-    overflow: visible;
-}
-/*header*/
-
-/*galeria*/
-.mainGaleria{
-    height: 60rem;
-}
-.textoGaleria P{
-    font-size: 1.3125rem;
-}
-/*galeria*/
-
-/*lanazamientos*/
-.mainLanzamientos{
-    height: 43.75rem;
-}
-.textoLanzamientos  p {
-    font-size: 1.3125rem;
-}
-.contenedorImagenLanzamientos{
-    padding-top: 3.125rem
-}
-/*lanzamientos*/
-
-/*trabaja con nosotros*/
-.texto1TrabajaConNosotros p{
-    font-size: 1.3125rem
-}
-/*trabaja con nosotros*/
-
-/*testimonios*/
-.contenedorTituloTestimonios P {
-    font-size: 1.3125rem;
-}
-.fotoTestimonio{
+    padding-top: 0; }
+  .contenedorFoto1, .contenedorFoto2 {
+    padding-top: 1.25rem; }
+  /*index*/
+  /*header*/
+  .mx-4 {
+    margin-left: .3125rem !important;
+    /* La unica forma que encontre de pisar el margen de mx-4 fue con important, se que no es lo ideal pero no encontre otra forma de hacerlo*/
+    margin-right: .3125rem !important; }
+  .btn {
+    padding: .1875rem; }
+  .container-fluid {
+    overflow: visible; }
+  /*header*/
+  /*galeria*/
+  .mainGaleria {
+    height: 60rem; }
+  .textoGaleria P {
+    font-size: 1.25rem; }
+  /*galeria*/
+  /*lanazamientos*/
+  .mainLanzamientos {
+    height: 43.75rem; }
+  .textoLanzamientos p {
+    font-size: 1.25rem; }
+  .contenedorImagenLanzamientos {
+    padding-top: 3.125rem; }
+  /*lanzamientos*/
+  /*trabaja con nosotros*/
+  .texto1TrabajaConNosotros p {
+    font-size: 1.25rem; }
+  /*trabaja con nosotros*/
+  /*testimonios*/
+  .contenedorTituloTestimonios P {
+    font-size: 1.25rem; }
+  .fotoTestimonio {
     width: 18.75rem;
-    height: 12.5rem;
-}
-/*testimonios*/
-}
+    height: 12.5rem; }
+  /*testimonios*/ }
 
-@media (max-width: 768px){
-/*header index*/
-.contenedorLogoIndex{
-    padding-top: 12.5rem;
-}
-.contenedorMenuIndex{
+@media (max-width: 768px) {
+  /*header index*/
+  .contenedorLogoIndex {
+    padding-top: 12.5rem; }
+  .contenedorMenuIndex {
     padding-left: 3.125rem;
-    padding-top: 14rem;
-}
-.menuIndex{
-    flex-direction: column;
+    padding-top: 14rem; }
+  .menuIndex {
+    display: flex;
     justify-content: center;
-    gap: 5px;
-}
-.menuIndex li:nth-child(5){
-    margin-bottom: 0;
-}
-.menuIndex li a{
-text-align: center;
-}
-/*header index*/
-
-/*index*/
-.mainIndex{
-    height: 85rem;
-}
-.tituloMainIndex{
-    padding: 3.125rem;
-    padding-bottom: 1.5625rem;
-}
-.contenedorFotoTexto{
+    align-items: none;
     flex-direction: column;
+    flex-wrap: none;
+    gap: 0.3125rem; }
+    .menuIndex a {
+      text-align: center; }
+    .menuIndex li:nth-child(5) {
+      margin-bottom: 0; }
+  /*header index*/
+  /*index*/
+  .mainIndex {
+    height: 85rem; }
+  .tituloMainIndex {
+    padding-bottom: 1.5625rem; }
+    .tituloMainIndex h1 {
+      padding-top: 1.5625rem; }
+  .contenedorFotoTexto {
+    display: flex;
+    justify-content: none;
     align-items: center;
-    padding: 0;
-}
-.contenedorFoto1, .contenedorFoto2{
-    padding-top: 0;
-}
-.estiloImagen{
+    flex-direction: column;
+    flex-wrap: none;
+    gap: none;
+    padding: 0; }
+  .contenedorFoto1, .contenedorFoto2 {
+    padding-top: 0; }
+  .estiloImagen {
     width: 25rem;
-    height: 25rem
-}
-/*index*/
-
-/*headers*/
-.nav-pills{
+    height: 25rem; }
+  /*index*/
+  /*headers*/
+  .nav-pills {
+    display: flex;
+    justify-content: none;
+    align-items: none;
+    flex-direction: none;
     flex-wrap: wrap;
-    row-gap: 1.25rem;
-}
-/*headers*/
-
-/*galeria*/
-.mainGaleria{
-    height: 45rem;
-}
-/*galeria*/
-/*lanzamientos*/
-.mainLanzamientos{
-    height: 50rem;
-}
-.textoLanzamientos{
-    height: auto;
-}
-
-/*lanzamientos*/
-
-/*trabaja con nosotros*/
-.mainTrabajaConNosotros{
-    height: 75rem;
-}
-.esiloImagenTrabajaConNosotros{
-height: 25rem;
-}
-.contenedor1TrabajaConNosotros p,.contenedor2TrabajaConNosotros p  {
+    gap: none;
+    row-gap: 1.25rem; }
+  /*headers*/
+  /*galeria*/
+  .mainGaleria {
+    height: 45rem; }
+  /*galeria*/
+  /*lanzamientos*/
+  .mainLanzamientos {
+    height: 50rem; }
+  .textoLanzamientos {
+    height: auto; }
+  /*lanzamientos*/
+  /*trabaja con nosotros*/
+  .mainTrabajaConNosotros {
+    height: 75rem; }
+  .esiloImagenTrabajaConNosotros {
+    height: 25rem; }
+  .contenedor1TrabajaConNosotros p, .contenedor2TrabajaConNosotros p {
     font-size: 1.125rem;
     padding-left: 3.25rem;
-    padding-right: 3.25rem;
-}
-/*trabaja con nosotros*/
-
-/*testimonios*/
-.mainTestimonios{
-    height: 60rem;
-}
-.contenedorTituloTestimonios{
-    padding-top: 2rem;
-}
-.contenedorTestimonios{
-    flex-direction: column;
+    padding-right: 3.25rem; }
+  /*trabaja con nosotros*/
+  /*testimonios*/
+  .mainTestimonios {
+    height: 60rem; }
+  .contenedorTituloTestimonios {
+    padding-top: 2rem; }
+  .contenedorTestimonios {
+    display: flex;
+    justify-content: none;
     align-items: center;
-    padding-top: 2rem;
-    gap: 1.25rem;
-}
-/*testimonios*/
-}
-
-@media (max-width: 425px){
-/*headers*/
-.container-fluid{
-    overflow:visible;
-}
-.nav, .nav-pills{
     flex-direction: column;
-    row-gap: .125rem;
-}
-/*header*/ 
-
-/*index*/
-.mainIndex{
-    height: 85rem;
-}
-.estiloImagen{
-    width: 20rem;
-    height: 20rem
-}
-.contenedorPIndex{
-    width: 20rem;
-}
-.pIndex{
-    font-size: 1.125rem;
-}
-/*index*/
-
-/*galeria*/
-.mainGaleria{
-    height: 28rem;
-}
-.textoGaleria p{
-    font-size: 1.125rem;
-}
-.carousel-inner{
-    padding-top: .9375rem ;
-}
-/*galeria*/
-
-/*lanzamientos*/
-.textoLanzamientos p{
-    font-size: 1.125rem;
-}
-/*lanzamientos*/
-
-/*trabaja con nosotros*/
-.mainTrabajaConNosotros{
-    height: 100rem;
-}
-.texto1TrabajaConNosotros p{
-    font-size: 1.125rem;
-}
-.contenedor1TrabajaConNosotros{
-    flex-direction: column;
+    flex-wrap: none;
     gap: 1.25rem;
-    padding-top: 1.25rem;
-}
-.contenedorP1TrabajaConNosotros{
-    width:25rem;
-    margin-left: 0;
-}
-.contenedorP1TrabajaConNosotros p{
-    font-size: .9375rem;
-    order: 1;
-}
-.esiloImagenTrabajaConNosotros{
+    padding-top: 2rem; }
+  /*testimonios*/ }
+
+@media (max-width: 425px) {
+  /*headers*/
+  .container-fluid {
+    overflow: visible; }
+  .nav, .nav-pills {
+    flex-direction: column;
+    row-gap: .125rem; }
+  /*header*/
+  /*index*/
+  .mainIndex {
+    height: 85rem; }
+  .estiloImagen {
+    width: 20rem;
+    height: 20rem; }
+  .contenedorPIndex {
+    width: 20rem; }
+  .pIndex {
+    font-size: 1.125rem; }
+  /*index*/
+  /*galeria*/
+  .mainGaleria {
+    height: 28rem; }
+  .textoGaleria p {
+    font-size: 1.125rem; }
+  .carousel-inner {
+    padding-top: .9375rem; }
+  /*galeria*/
+  /*lanzamientos*/
+  .textoLanzamientos p {
+    font-size: 1.125rem; }
+  /*lanzamientos*/
+  /*trabaja con nosotros*/
+  .mainTrabajaConNosotros {
+    height: 100rem; }
+  .texto1TrabajaConNosotros p {
+    font-size: 1.125rem; }
+  .contenedor1TrabajaConNosotros {
+    display: flex;
+    justify-content: none;
+    align-items: none;
+    flex-direction: column;
+    flex-wrap: none;
+    gap: 1.25rem;
+    padding-top: 1.25rem; }
+  .contenedorP1TrabajaConNosotros {
+    width: 25rem;
+    margin-left: 0; }
+    .contenedorP1TrabajaConNosotros p {
+      font-size: 0.9375rem;
+      order: 1; }
+  .esiloImagenTrabajaConNosotros {
     height: 22rem;
     width: auto;
-    order: 2;
-}  /*aca se que podria haber haberlo echo en menos lineas de codigo pero preferi hacerlo asi por comodidad por si tengo que arreglar algo*/
-.contenedor2TrabajaConNosotros{
+    order: 2; }
+  .contenedor2TrabajaConNosotros {
+    display: flex;
+    justify-content: none;
+    align-items: none;
     flex-direction: column;
+    flex-wrap: none;
     gap: 1.25rem;
-    padding-top: 1.25rem;
-}
-.contenedorP2TrabajaConNosotros{
-    width:25rem;
-    margin-right: 0;
-    font-size: .9375rem;
-}
-.contenedor2TrabajaConNosotros p{
-    font-size: .9375rem;
-}
-/*trabaja con nosotros*/
-
-/*testimonios*/
-.contenedorTituloTestimonios p{
-    font-size: 1.125rem;
-}
-/*testimonios*/
-
-/*footer*/
-footer{
-    height: 15rem;
-}
-footer .h5{
-    font-size: .9375rem;
-}
-footer .h6{
-    font-size: .75rem;
-}
-footer .h7{
-    font-size: .625rem;
-}
-.estiloLogoFooter{
+    padding-top: 1.25rem; }
+  .contenedorP2TrabajaConNosotros {
+    width: 25rem;
+    margin-right: 0; }
+    .contenedorP2TrabajaConNosotros p {
+      font-size: 0.9375rem; }
+  /*trabaja con nosotros*/
+  /*testimonios*/
+  .contenedorTituloTestimonios p {
+    font-size: 1.125rem; }
+  /*testimonios*/
+  /*footer*/
+  footer {
+    height: 15rem; }
+    footer .h5 {
+      font-size: .9375rem; }
+    footer .h6 {
+      font-size: .75rem; }
+    footer .h7 {
+      font-size: .625rem; }
+  .estiloLogoFooter {
     width: 15.625rem;
-    height: 12.5rem;
-}
-.estiloLogoInstagram{
-width: 2.5rem;
-height: 2.5rem;
-}
-/*footer*/
-}
+    height: 12.5rem; }
+  .estiloLogoInstagram {
+    width: 2.5rem;
+    height: 2.5rem; }
+  /*footer*/ }
 
-@media (max-width: 375px){
-/*header*/
-.contenedorLogoHeader{
-width: 30rem;
-}
-/*header*/
+@media (max-width: 375px) {
+  /*header*/
+  .contenedorLogoHeader {
+    width: 30rem; }
+  /*header*/
+  /*galeria*/
+  .carousel-inner {
+    padding-top: 2rem; }
+  .textoGaleria P {
+    font-size: 1rem; }
+  /*galeria*/
+  /*lanzamientos*/
+  .textoLanzamientos p {
+    font-size: 1rem; }
+  .mainLanzamientos {
+    height: 45rem; }
+  /*lanzamientos*/
+  /*Reservas*/
+  .mainReservas {
+    height: 32rem; }
+  .contenedorTituloReservas {
+    padding-top: 3rem; }
+  .formularioReservas {
+    padding-top: 0; }
+    .formularioReservas div {
+      margin: 2rem;
+      font-size: 1rem; }
+  /*reservas*/
+  /*trabaja con nosotros*/
+  .texto1TrabajaConNosotros p {
+    font-size: 1rem; }
+  /*trabaja con nosotros*/
+  /*testimonios*/
+  .contenedorTituloTestimonios p {
+    font-size: 1rem; }
+  /*testimonios*/ }
 
-/*galeria*/
-.carousel-inner{
-    padding-top: 2rem;
-}
-.textoGaleria P{
-    font-size: 1rem
-}
-/*galeria*/
-
-/*lanzamientos*/
-.textoLanzamientos p{
-    font-size: 1rem
-}
-.mainLanzamientos{
-    height: 45rem;
-}
-/*lanzamientos*/
-
-/*Reservas*/
-.mainReservas{
-    height: 32rem;
-}
-.contenedorTituloReservas{
-    padding-top: 3rem;
-}
-.formularioReservas {
-    padding-top: 0;
-}
-.formularioReservas div{
-    margin: 2rem;
-    font-size: 1rem
-}
-/*reservas*/
-
-/*trabaja con nosotros*/
-.texto1TrabajaConNosotros p{
-    font-size: 1rem;
-}
-/*trabaja con nosotros*/
-
-/*testimonios*/
-.contenedorTituloTestimonios p{
-    font-size: 1rem;
-}
-/*testimonios*/
-}
-
-@media (max-width: 320px){
-/*index*/
-.estilosMediaLogoIndex{
-    height: 21rem;
-}
-/*index*/
-
-/*footer*/
-.estiloLogoFooter{
+@media (max-width: 320px) {
+  /*index*/
+  .estilosMediaLogoIndex {
+    height: 21rem; }
+  /*index*/
+  /*footer*/
+  .estiloLogoFooter {
     width: 12rem;
-    height: 8rem;
-}
-/*footer*/
-
-/*header*/
-.contenedorLogoHeader{
+    height: 8rem; }
+  /*footer*/
+  /*header*/
+  .contenedorLogoHeader {
     width: 10rem;
-    overflow: visible;
-}
-.logoHeader{
-    height: 100%;
-}
-/*header*/
-
-/*lanzamientos*/
-.mainLanzamientos{
-    height: 52rem;
-}
-/*lanzamientos*/
-
-/*reservas*/
-.mainReservas{
-    height: 30rem;
-}
-.formularioReservas div{
+    overflow: visible; }
+  .logoHeader {
+    height: 100%; }
+  /*header*/
+  /*lanzamientos*/
+  .mainLanzamientos {
+    height: 52rem; }
+  /*lanzamientos*/
+  /*reservas*/
+  .mainReservas {
+    height: 30rem; }
+  .formularioReservas div {
     margin: 1.5625rem;
-    font-size: .875rem;
-}
-/*reservas*/
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    font-size: .875rem; }
+  /*reservas*/ }

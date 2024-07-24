@@ -1,0 +1,64 @@
+@media (max-width: 375px) {
+/*header*/
+.contenedorLogoHeader{
+    width: 30rem;
+    }
+/*header*/
+
+/*galeria*/
+.carousel-inner{
+    padding-top: 2rem;
+}
+.textoGaleria{ 
+    P{
+    font-size: map-get($font-size-ss, textos );
+    }
+}   
+/*galeria*/
+
+/*lanzamientos*/
+.textoLanzamientos{
+    p{
+    font-size: map-get($font-size-ss, textos );
+    }
+}
+.mainLanzamientos{
+    height: 45rem;
+}
+/*lanzamientos*/
+
+/*Reservas*/
+.mainReservas{
+    height: 32rem;
+}
+.contenedorTituloReservas{
+    padding-top: 3rem;
+}
+.formularioReservas {
+    padding-top: 0;
+    div{
+    margin: 2rem;
+    font-size: map-get($font-size-ss, textos );
+    }
+}
+/*reservas*/
+
+/*trabaja con nosotros*/
+.texto1TrabajaConNosotros{
+    p{
+    font-size: map-get($font-size-ss, textos );
+    }
+}
+/*trabaja con nosotros*/
+
+/*testimonios*/
+.contenedorTituloTestimonios{
+    p{
+    font-size: map-get($font-size-ss, textos );
+    }
+}
+/*testimonios*/
+}
+
+
+

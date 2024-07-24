@@ -1,0 +1,19 @@
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23343a40" viewBox="0 0 8 8"><path d="M4 0L3 1l2.5 2.5L3 6 4 7l4-4-4-4z"/></svg>');
+}
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23343a40" viewBox="0 0 8 8"><path d="M4 0L5 1 2.5 3.5 5 6 4 7 0 3 4 0z"/></svg>');
+}
+.carousel-inner{
+    padding-top: 3.75rem;
+}  
+.carousel-item {
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        height: auto;
+        border: 2px solid #000000;
+        border-radius: 6px;
+    }
+}

@@ -1,0 +1,93 @@
+@media (max-width:1024px){
+/*index*/
+.estilosMediaLogoIndex{
+    width: 37.5rem;
+    height: 28.125rem;
+}
+.menuIndex {
+    @include flexbox(center,none,none,wrap,none);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a{
+        display: block;
+    }
+    li:nth-child(5){
+        margin-bottom: 1.875rem;
+    }
+}
+.mainIndex{
+    height: 60rem;
+}
+.estiloImagen{
+    width: 18.75rem;
+    height: 31.25rem;
+}
+.contenedorFotoTexto{
+    padding-top: 4rem;
+    gap: 1.25rem;
+}
+.pIndex{
+    font-size: map-get($font-size-xl, sub-textos );
+    padding-top: 1.500rem;
+}
+.contenedorPIndex{
+    height: auto;
+    padding-top: 0;
+}
+.contenedorFoto1, .contenedorFoto2{
+    padding-top: 1.25rem;
+}
+/*index*/
+
+/*header*/
+.mx-4 {
+    margin-left: .3125rem !important; /* La unica forma que encontre de pisar el margen de mx-4 fue con important, se que no es lo ideal pero no encontre otra forma de hacerlo*/
+    margin-right: .3125rem !important;
+}
+.btn{
+    padding: .1875rem;
+}
+.container-fluid{
+    overflow: visible;
+}
+/*header*/
+
+/*galeria*/
+.mainGaleria{
+    height: 60rem;
+}
+.textoGaleria P{
+    font-size:map-get($font-size-l, textos );
+}
+/*galeria*/
+
+/*lanazamientos*/
+.mainLanzamientos{
+    height: 43.75rem;
+}
+.textoLanzamientos  p {
+    font-size: map-get($font-size-l, textos );
+}
+.contenedorImagenLanzamientos{
+    padding-top: 3.125rem
+}
+/*lanzamientos*/
+
+/*trabaja con nosotros*/
+.texto1TrabajaConNosotros p{
+    font-size: map-get($font-size-l, textos );
+}
+/*trabaja con nosotros*/
+
+/*testimonios*/
+.contenedorTituloTestimonios P {
+    font-size: map-get($font-size-l, textos );
+}
+.fotoTestimonio{
+    width: 18.75rem;
+    height: 12.5rem;
+}
+/*testimonios*/
+
+}

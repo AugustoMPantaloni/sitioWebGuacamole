@@ -1,0 +1,42 @@
+.mainIndex{
+    height:65rem;
+    width: 100%;
+    background-image: map-get($fondo , fondoMedio);
+    overflow: hidden;
+}
+.tituloMainIndex{
+    h1{
+        width: 100%;
+        @include flexbox(center,none,none,none,none);
+        padding-top: 6.25rem;
+        color: #96211f ;
+        font-size: map-get($font-size-xl, titulos);
+        @include style-text-700;
+    }
+}
+.contenedorFotoTexto{
+    @include flexbox(space-between,none,row,none,none);
+    padding-top: 6.25rem;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+}
+.contenedorPIndex{
+    height: 35rem;
+    width: 35rem;
+    border-radius: .625rem;
+    background-image: map-get($fondo , fondoOscuro);
+    padding-top: 2.5rem;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    overflow: hidden;
+}
+.pIndex{
+    @include flexbox(none,center,none,none,none);
+    text-align: center;
+    font-size: map-get($font-size-xl, textos ); 
+    @include style-text-400;
+
+}
+.estiloImagen{
+    border-radius: .625rem;
+}

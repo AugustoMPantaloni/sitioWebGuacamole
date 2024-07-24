@@ -1,0 +1,23 @@
+.container-fluid{
+    height: 12.5rem;
+    width: 100%;
+    overflow: hidden;
+    background-image: map-get($fondo, fondoOscuro );
+}
+.contenedorLogoHeader{
+    width: 18.75rem;
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15.625rem;
+}
+.logoHeader{
+    width: 21.875rem;
+    height: auto;
+}
+
+.nav-item{
+@include botonesHeader
+}

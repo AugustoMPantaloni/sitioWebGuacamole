@@ -1,0 +1,95 @@
+@media (max-width: 768px){
+
+/*header index*/
+.contenedorLogoIndex{
+    padding-top: 12.5rem;
+}
+.contenedorMenuIndex{
+    padding-left: 3.125rem;
+    padding-top: 14rem;
+}
+.menuIndex{
+    @include flexbox(center,none,column,none,.3125rem);
+    a{
+    text-align: center;
+    }
+    li:nth-child(5){
+        margin-bottom: 0;
+    }
+}
+/*header index*/
+
+/*index*/
+.mainIndex{
+    height: 85rem;
+}
+.tituloMainIndex{
+    padding-bottom: 1.5625rem;
+    h1{
+        padding-top: 1.5625rem;
+    }
+}
+.contenedorFotoTexto{
+    @include flexbox(none,center,column,none,none);
+    padding: 0;
+}
+.contenedorFoto1, .contenedorFoto2{
+    padding-top: 0;
+}
+.estiloImagen{
+    width: 25rem;
+    height: 25rem
+}
+/*index*/
+
+/*headers*/
+.nav-pills{
+    @include flexbox(none,none,none,wrap,none);
+    row-gap: 1.25rem;
+}
+/*headers*/
+
+/*galeria*/
+.mainGaleria{
+    height: 45rem;
+}
+/*galeria*/
+
+/*lanzamientos*/
+.mainLanzamientos{
+    height: 50rem;
+}
+.textoLanzamientos{
+    height: auto;
+}
+/*lanzamientos*/
+
+/*trabaja con nosotros*/
+.mainTrabajaConNosotros{
+    height: 75rem;
+}
+.esiloImagenTrabajaConNosotros{
+    height: 25rem;
+}
+.contenedor1TrabajaConNosotros ,.contenedor2TrabajaConNosotros {
+    p{
+    font-size: map-get($font-size-m, sub-textos );
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
+    }
+}
+/*trabaja con nosotros*/
+
+/*testimonios*/
+.mainTestimonios{
+    height: 60rem;
+}
+.contenedorTituloTestimonios{
+    padding-top: 2rem;
+}
+.contenedorTestimonios{
+    @include flexbox(none,center,column,none,1.25rem);
+    padding-top: 2rem;
+}
+/*testimonios*/
+}

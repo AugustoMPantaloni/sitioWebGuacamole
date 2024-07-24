@@ -1,0 +1,41 @@
+@media (max-width:1440px){
+    /* headers*/
+.nav-item {
+    font-size: map-get($font-size-xl, botones );
+    padding: .125rem .3125rem;
+    white-space: nowrap;
+}
+.nav-pills{
+    flex-wrap: nowrap;
+}
+.contenedorLogoHeader{
+    margin-right: 0rem;
+}
+/*headers*/
+
+/*index*/
+.contenedorLogoIndex{
+    height: 12.5rem;
+        }
+    .contenedorMenuIndex{
+        padding-top: 18.75rem;
+        }
+    .menuIndex li{
+        margin-right: 5rem;
+        }
+    .menuIndex li a{
+        font-size: map-get($font-size-xl, botones );
+        padding: .625rem .625rem;
+        }
+    .contenedorFotoTexto{
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+        }
+    /*index*/
+
+    /*galeria*/
+.mainGaleria{
+    height: 74rem;
+}
+/* galeria*/
+}

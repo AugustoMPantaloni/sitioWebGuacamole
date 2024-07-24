@@ -1,0 +1,38 @@
+.headerIndex{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.contenedorVideoIndex{
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.contenedorLogoIndex{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18.75rem;
+}
+.contenedorMenuIndex{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    padding-left: 5.625rem;
+    padding-top: 15.625rem;
+    
+    li { 
+        list-style: none;
+        display: inline;
+        margin-right: 6.25rem;
+        a{
+            @include botonesHeaderIndex;
+        }
+    }
+}

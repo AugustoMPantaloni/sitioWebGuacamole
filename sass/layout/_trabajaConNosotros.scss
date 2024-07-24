@@ -1,0 +1,61 @@
+.mainTrabajaConNosotros{
+    width: 100%;
+    height: 75rem;
+    background-image: map-get($fondo, fondoMedio );
+}
+
+.tituloMainTrabajaConNosotros{
+    @include flexbox(center,none,none,none,none);
+    padding-top: 3.125rem;
+    color: #96211f ;
+    text-align: center;
+    @include style-text-700;
+}
+.texto1TrabajaConNosotros{
+    width: 100%;
+    height: 10rem;
+    @include flexbox(center,none,none,none,none);
+    padding-top: 3rem;
+    p{
+        font-size: map-get($font-size-xl, textos );
+        @include style-text-400;
+        text-align: center;
+    }
+}
+.contenedorP1TrabajaConNosotros {
+    background-image: map-get($fondo, fondoOscuro );
+    border-radius: .9375rem;
+    width: 56.25rem;
+    margin-left: 3.125rem;
+}
+.contenedor1TrabajaConNosotros{
+    @include flexbox(none,center,none,none,none);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    p{
+        padding-right: 6.25rem;
+        padding-left: 6.25rem;
+        margin-bottom: 0rem;
+        text-align: center;
+        font-size: map-get($font-size-xl, sub-textos );
+        @include style-text-400
+    }
+}
+.contenedorP2TrabajaConNosotros{
+    background-image: map-get($fondo, fondoOscuro );
+    border-radius: .9375rem;
+    width: 56.25rem;
+    margin-right: 3.125rem;
+}
+.contenedor2TrabajaConNosotros{
+    @include flexbox(flex-end,center,none,none,none);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    p{
+        padding-right: 6.25rem;
+        padding-left: 6.25rem;
+        text-align: center;
+        font-size: map-get($font-size-xl, sub-textos );
+        @include style-text-400
+    }
+}

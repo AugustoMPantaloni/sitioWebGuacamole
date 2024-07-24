@@ -1,0 +1,24 @@
+@import "./base/resets";
+@import "./base/font";
+
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+@import "./layout/headerIndex";
+@import "./layout/mainIndex";
+@import "./layout/header";
+@import "./layout/mainGaleria";
+@import "./layout/mainLanzamientos";
+@import "./layout/mainReservas";
+@import "./layout/trabajaConNosotros";
+@import "./layout/mainTestimonios";
+@import "./layout/footer";
+
+@import "./components/bootstrapGaleria";
+
+@import "./responsive/1440.scss";
+@import "./responsive/1024.scss";
+@import "./responsive/768.scss";
+@import "./responsive/425.scss";
+@import "./responsive/375.scss";
+@import "./responsive/320.scss";

@@ -1,0 +1,43 @@
+$font-size-xl: (
+    botones: .9375rem, 
+    titulos: 2.5rem,
+    textos: 1.5625rem,
+    sub-textos: 1.25rem,
+);
+
+$font-size-l: (
+    botones: .9375rem, 
+    titulos: 2.1875rem,
+    textos: 1.25rem,
+    sub-textos: 1.125rem,
+);
+
+$font-size-m: (
+    botones: .9375rem,
+    titulos: 2rem,
+    textos: 1.25rem,
+    sub-textos: 1.125rem,
+);
+
+$font-size-s: (
+    botonesIndex: .9375rem,
+    botonesHeader: .625rem,
+    titulos: 1.75rem,
+    textos: 1.125rem,
+    sub-textos: .9375rem,
+);
+
+$font-size-ss: (
+    botonesIndex: .9375rem,
+    botonesHeader: .625rem,
+    titulos: 1.75rem,
+    textos: 1rem,
+    sub-textos: .9375rem,
+);
+
+$fondo: (
+    fondoOscuro: url("../img/fondos/fondoOscuro.png"),
+    fondoClaro: url("../img/fondos/fondoClaro.png"),
+    fondoMedio: url("../img/fondos/fondoMedio.png"),
+);
+

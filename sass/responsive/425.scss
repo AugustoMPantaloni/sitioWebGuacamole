@@ -1,0 +1,117 @@
+@media (max-width: 425px){
+/*headers*/
+.container-fluid{
+    overflow:visible;
+}
+.nav, .nav-pills{
+    flex-direction: column;
+    row-gap: .125rem;
+}
+/*header*/ 
+
+/*index*/
+.mainIndex{
+    height: 85rem;
+}
+.estiloImagen{
+    width: 20rem;
+    height: 20rem
+}
+.contenedorPIndex{
+    width: 20rem;
+}
+.pIndex{
+    font-size: map-get($font-size-s, textos )
+}
+/*index*/
+
+/*galeria*/
+.mainGaleria{
+    height: 28rem;
+}
+.textoGaleria {
+    p{
+    font-size: 1.125rem;
+    }
+}
+.carousel-inner{
+    padding-top: .9375rem ;
+}
+/*galeria*/
+
+/*lanzamientos*/
+.textoLanzamientos{
+    p{
+    font-size: map-get($font-size-s, textos );
+    }
+}
+/*lanzamientos*/
+
+/*trabaja con nosotros*/
+.mainTrabajaConNosotros{
+    height: 100rem;
+}
+.texto1TrabajaConNosotros{
+    p{
+    font-size: map-get($font-size-s, textos );
+    }
+}
+.contenedor1TrabajaConNosotros{
+    @include flexbox(none,none,column,none,1.25rem);
+    padding-top: 1.25rem;
+}
+.contenedorP1TrabajaConNosotros{
+    width:25rem;
+    margin-left: 0;
+    p{
+        font-size: map-get($font-size-s, sub-textos );
+        order: 1;
+    }
+}
+.esiloImagenTrabajaConNosotros{
+    height: 22rem;
+    width: auto;
+    order: 2;
+} 
+.contenedor2TrabajaConNosotros{
+    @include flexbox(none,none,column,none,1.25rem);
+    padding-top: 1.25rem;
+}
+.contenedorP2TrabajaConNosotros{
+    width:25rem;
+    margin-right: 0;
+    p{
+        font-size: map-get($font-size-s, sub-textos );
+    }
+}
+/*trabaja con nosotros*/
+
+/*testimonios*/
+.contenedorTituloTestimonios p{
+    font-size: map-get($font-size-s, textos );
+}
+/*testimonios*/
+
+/*footer*/
+footer{
+    height: 15rem;
+    .h5{
+        font-size: .9375rem;
+    }
+    .h6{
+        font-size: .75rem;
+    }
+    .h7{
+        font-size: .625rem;
+    }
+}
+.estiloLogoFooter{
+    width: 15.625rem;
+    height: 12.5rem;
+}
+.estiloLogoInstagram{
+width: 2.5rem;
+height: 2.5rem;
+}
+/*footer*/
+}

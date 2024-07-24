@@ -1,0 +1,42 @@
+@media (max-width: 320px){
+/*index*/
+.estilosMediaLogoIndex{
+    height: 21rem;
+}
+/*index*/
+
+/*footer*/
+.estiloLogoFooter{
+    width: 12rem;
+    height: 8rem;
+}
+/*footer*/
+
+/*header*/
+.contenedorLogoHeader{
+    width: 10rem;
+    overflow: visible;
+}
+.logoHeader{
+    height: 100%;
+}
+/*header*/
+
+/*lanzamientos*/
+.mainLanzamientos{
+    height: 52rem;
+}
+/*lanzamientos*/
+
+/*reservas*/
+.mainReservas{
+    height: 30rem;
+}
+.formularioReservas{
+    div{
+    margin: 1.5625rem;
+    font-size: .875rem;
+    }
+}
+/*reservas*/
+}
