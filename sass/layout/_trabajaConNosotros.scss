@@ -9,7 +9,9 @@
     padding-top: 3.125rem;
     color: #96211f ;
     text-align: center;
-    @include style-text-700;
+    h1{
+        @include style-text-700;
+    }
 }
 .texto1TrabajaConNosotros{
     width: 100%;

@@ -13,6 +13,12 @@
 .mainIndex{
     height: 85rem;
 }
+.tituloMainIndex{
+    h1{
+        font-size: map-get($font-size-s, titulos );
+        padding-top: 1.5625rem;
+    }
+}
 .estiloImagen{
     width: 20rem;
     height: 20rem

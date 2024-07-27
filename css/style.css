@@ -51,6 +51,55 @@
       font-weight: 400;
       font-style: normal; }
 
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+.mouse-btn {
+  margin: 100px auto;
+  width: 40px;
+  height: 80px;
+  border: 3px solid black;
+  border-radius: 20px;
+  display: flex; }
+
+.mouse-scroll {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(170deg, black, black);
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling13 1s linear infinite; }
+
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(20px); } }
+
 .mainIndex {
   height: 65rem;
   width: 100%;
@@ -109,7 +158,18 @@
   font-style: normal; }
 
 .estiloImagen {
-  border-radius: .625rem; }
+  border-radius: .625rem;
+  transform: scale(0.5);
+  animation: zoom-in 1s ease-out forwards;
+  animation-delay: 0.5s; }
+
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.5); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
 
 .container-fluid {
   height: 12.5rem;
@@ -275,11 +335,12 @@
   gap: none;
   padding-top: 3.125rem;
   color: #96211f;
-  text-align: center;
-  font-family: "Oswald";
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal; }
+  text-align: center; }
+  .tituloMainTrabajaConNosotros h1 {
+    font-family: "Oswald";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; }
 
 .texto1TrabajaConNosotros {
   width: 100%;
@@ -380,6 +441,30 @@
   gap: none;
   padding-top: 9.375rem; }
 
+.roll-in-left {
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both; }
+
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1; } }
+
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1; } }
+
 footer {
   width: 100%;
   height: 20rem;
@@ -468,6 +553,10 @@ footer {
   /* galeria*/ }
 
 @media (max-width: 1024px) {
+  /*header*/
+  .mouse-btn {
+    margin: 50px auto; }
+  /*header*/
   /*index*/
   .estilosMediaLogoIndex {
     width: 37.5rem;
@@ -557,6 +646,8 @@ footer {
       text-align: center; }
     .menuIndex li:nth-child(5) {
       margin-bottom: 0; }
+  .mouse-btn {
+    margin: 5px auto; }
   /*header index*/
   /*index*/
   .mainIndex {
@@ -564,6 +655,7 @@ footer {
   .tituloMainIndex {
     padding-bottom: 1.5625rem; }
     .tituloMainIndex h1 {
+      font-size: 2rem;
       padding-top: 1.5625rem; }
   .contenedorFotoTexto {
     display: flex;
@@ -635,6 +727,9 @@ footer {
   /*index*/
   .mainIndex {
     height: 85rem; }
+  .tituloMainIndex h1 {
+    font-size: 1.75rem;
+    padding-top: 1.5625rem; }
   .estiloImagen {
     width: 20rem;
     height: 20rem; }
@@ -729,6 +824,9 @@ footer {
     font-size: 1rem; }
   .mainLanzamientos {
     height: 45rem; }
+  .estiloImagenLanzamientos {
+    width: 18.75rem;
+    height: 12.5rem; }
   /*lanzamientos*/
   /*Reservas*/
   .mainReservas {
@@ -751,6 +849,10 @@ footer {
   /*testimonios*/ }
 
 @media (max-width: 320px) {
+  /*header*/
+  .mouse-btn {
+    width: 30px;
+    height: 60px; }
   /*index*/
   .estilosMediaLogoIndex {
     height: 21rem; }
